@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+
+
+    <div class="w-25 m-auto bg-light shadow p-5">
+        <div class="form-group">
+            <label for="auth-email">Enter Your Email</label>
+            <input type="email" id="auth-email">
+        </div>
+
+        <div class="form-group">
+            <label for="auth-password">Enter Your Password</label>
+            <input type="password" id="auth-password">
+        </div>
+
+        <button class="btn btn-outline-success" id="auth-submit" onclick="handleAuth('login')">Login</button>
+        
+        <p id="auth-error" class="text-danger"></p>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
