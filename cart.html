@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand fs-1 fw-bold" href="index.html">SHOP.CO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">On Sales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">New Arriavls</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Brands</a>
+                        </li>
+                    </ul>
+
+                    <div class="w-50 m-auto nav-search-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="form-control w-100" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+
+                    <div class="d-flex justify-content-between nav-extra-btn">
+                        <a href="#" class="text-dark">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+
+                        <a href="#" class="text-dark">
+                            <i class="fa-regular fa-circle-user"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <div class="container my-5">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cart</li>
+        </ol>
+        
+        <h2 class="cart-title">YOUR CART</h2>
+        <div class="row">
+          <!-- Cart Items -->
+          <div class="col-md-7 mb-4 cart-section">
+            <!-- Item 1 -->
+            <div class="cart-item">
+              <img src="assets/images/mshirt.png" alt="Product Image">
+              <div class="cart-item-details">
+                <h5>Gradient Graphic T-shirt</h5>
+                <p>Size: Large<br>Color: White</p>
+                <div class="cart-item-price">$145</div>
+              </div>
+              <div class="cart-item-quantity">
+                <button class="btn btn-outline-secondary"><i class="fa fa-minus"></i></button>
+                <span class="mx-2">1</span>
+                <button class="btn btn-outline-secondary"><i class="fa fa-plus"></i></button>
+              </div>
+              <button class="btn btn-danger">
+                <i class="fa fa-trash"></i>
+              </button>
+            </div>
+            <!-- Item 2 -->
+            <div class="cart-item">
+              <img src="assets/images/cshirt.png" alt="Product Image">
+              <div class="cart-item-details">
+                <h5>Checkered Shirt</h5>
+                <p>Size: Medium<br>Color: Red</p>
+                <div class="cart-item-price">$180</div>
+
+              </div>
+              <div class="cart-item-quantity">
+                <button class="btn btn-outline-secondary"><i class="fa fa-minus"></i></button>
+                <span class="mx-2">1</span>
+                <button class="btn btn-outline-secondary"><i class="fa fa-plus"></i></button>
+              </div>
+              <button class="btn btn-danger">
+                <i class="fa fa-trash"></i>
+              </button>
+            </div>
+            <!-- Item 3 -->
+            <div class="cart-item">
+              <img src="assets/images/bjeans.png" alt="Shirt">
+              <div class="cart-item-details">
+                <h5>Skinny Fit Jeans</h5>
+                <p>Size: Large<br>Color: Blue</p>
+                <div class="cart-item-price">$240</div>
+
+              </div>
+              <div class="cart-item-quantity">
+                <button class="btn btn-outline-secondary"><i class="fa fa-minus"></i></button>
+                <span class="mx-2">1</span>
+                <button class="btn btn-outline-secondary"><i class="fa fa-plus"></i></button>
+              </div>
+              <button class="btn btn-danger">
+                <i class="fa fa-trash"></i>
+              </button>
+            </div>
+          </div>
+    
+          <!-- Order Summary -->
+          <div class="col-md-5">
+            <div class="order-summary">
+              <h5>Order Summary</h5>
+              <div class="summary-item">
+                <span>Subtotal</span>
+                <span>$665</span>
+              </div>
+              <div class="summary-item">
+                <span>Discount (-20%)</span>
+                <span class="text-danger">- $113</span>
+              </div>
+              <div class="summary-item">
+                <span>Delivery Fee</span>
+                <span>$15</span>
+              </div>
+              <hr class="my-4">
+              <div class="summary-item">
+                <strong>Total</strong>
+                <strong>$467</strong>
+              </div>
+              <!-- Promo Code -->
+              <div class="promo-code">
+                <input type="text" placeholder="Add promo code">
+                <button>Apply</button>
+              </div>
+              <!-- Checkout Button -->
+              <button class="checkout-btn">Go to Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="newsletter-section">
+        <div class="container">
+            <h2 class="newsletter-title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+            <form class="newsletter-form">
+                <div class="input-wrapper">
+                    <input type="email" placeholder="Enter your email address" class="newsletter-input">
+                </div>
+                <button type="submit" class="newsletter-btn">Subscribe to Newsletter</button>
+            </form>
+        </div>
+      </section>
+      
+      
+      
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section footer-brand">
+            <a class="navbar-brand fs-1 fw-bold" href="#">SHOP.CO</a>
+            <p>We have clothes that suit your style and which you're proud to wear. From women to men.</p>
+            <div class="payment-icons" style="height: 20px;">
+              <img src="assets/icons/twitter.png" alt="Visa">
+              <img src="assets/icons/facebook.png" alt="Mastercard">
+              <img src="assets/icons/github.png" alt="PayPal">
+              <img src="assets/icons/instagram.png" alt="Apple Pay">
+            </div>
+          </div>
+      
+          <div class="footer-section footer-nav">
+            <h3>COMPANY</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section footer-nav">
+            <h3>HELP</h3>
+            <ul>
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Delivery Details</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section footer-nav">
+            <h3>FAQ</h3>
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Manage Deliveries</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section footer-nav">
+            <h3>RESOURCES</h3>
+            <ul>
+              <li><a href="#">Free eBooks</a></li>
+              <li><a href="#">Development Tutorial</a></li>
+              <li><a href="#">How to-Blog</a></li>
+              <li><a href="#">Youtube Playlist</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>Shop.co © 2000-2023, All Rights Reserved</p>
+          <div class="payment-icons">
+            <img src="assets/icons/Visa.png" alt="Visa">
+            <img src="assets/icons/Badge.png" alt="Mastercard">
+            <img src="assets/icons/paypal.png" alt="PayPal">
+            <img src="assets/icons/apple.png" alt="Apple Pay">
+            <img src="assets/icons/google.png" alt="Google Pay">
+          </div>
+        </div>
+      </footer>
+      
+      
+      
+              </section>
+             
+          </main>
+      
+          <script src="./script.js"></script>
+      
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+              crossorigin="anonymous"></script>
+</body>
+</html>
