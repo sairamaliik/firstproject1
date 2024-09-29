@@ -1,3 +1,20 @@
+function checkcartlogin(){
+    const user=getLoggedInUser();
+    if (!user) {
+        alert(" You need to login first to access the cart");
+        window.location.href="login.html";
+        
+    }
+}
+
+
+
+
+
+
+
+
+
 const products = [
     {
         id: 1,
@@ -61,7 +78,7 @@ function addToCart(productId) {
     const user = getLoggedInUser();
     if (!user) {
         alert("Your need to be logged in to add products to the cart.");
-        window.location.herf = 'login.html';
+        window.location.href = 'login.html';
         return;
     }
 
@@ -145,6 +162,7 @@ function logout() {
 
 function checkLoginStatus() {
     const user = getLoggedInUser();
+    console.log(user);
     const loginBtn = document.getElementById('login-btn')
     const registerBtn = document.getElementById('register-btn');
     const logoutBtn = document.getElementById('logout-btn');
@@ -152,20 +170,23 @@ function checkLoginStatus() {
 
     if (user) {
         if (loginBtn) loginBtn.style.display = "none"
-        if (registerBtn) loginBtn.style.display = "none"
-        if (logoutBtn) loginBtn.style.display = "inline-block"
-        if (cartBtn) loginBtn.style.display = "inline-block"
+        if (registerBtn) registerBtn.style.display = "none"
+        if (logoutBtn) logoutBtn.style.display = "inline-block"
+        if (cartBtn) cartBtn.style.display = "inline-block"
     } else {
         if (loginBtn) loginBtn.style.display = "inline-block"
-        if (registerBtn) loginBtn.style.display = "inline-block"
-        if (logoutBtn) loginBtn.style.display = "none"
-        if (cartBtn) loginBtn.style.display = "none"
+        if (registerBtn) registerBtn.style.display = "inline-block"
+        if (logoutBtn) logoutBtn.style.display = "none"
+        if (cartBtn) cartBtn.style.display = "none"
+       
     }
 }
 
 function getLoggedInUser() {
     return localStorage.getItem('loggedInUser')
 }
+
+
 
 let slider = document.querySelector('.reviews-slider');
 let scrollAmount = 0;
