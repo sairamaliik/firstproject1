@@ -7,14 +7,6 @@ function checkcartlogin(){
     }
 }
 
-
-
-
-
-
-
-
-
 const products = [
     {
         id: 1,
